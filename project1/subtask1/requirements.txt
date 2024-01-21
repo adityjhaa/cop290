@@ -1,0 +1,4 @@
+pandas
+jugaad-data
+pyarrow
+matplotlib
