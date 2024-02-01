@@ -1,0 +1,264 @@
+body{
+    margin: 0px;
+}
+
+.navbar{
+    height: 40px;
+    width: 100%;
+    background-color: #343a40;
+    color: #212529;
+    display: flex;
+    align-items: center;
+    padding: 8px 0px 8px 0px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.nav-link{
+    color: rgba(255,255,255,.5);    
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-align: left;
+    font-size: 1rem;
+    transition: 0.2s ease;
+}
+
+.links{
+    display: flex;
+}
+
+.nav-link:hover{
+    color: lightgray;
+
+}
+
+.navbar-click{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    background-color: white;  
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.alert{
+    padding: 1rem;
+}
+
+.alert-danger{
+    background-color: rgba(255, 0, 0, 0.12);
+}
+
+.alert-success{
+    background-color: rgba(0, 255, 0, 0.15);
+}
+
+.forms{
+    width: 100%;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+label{
+    font-size: 1.1rem;
+    padding: 20px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form-item{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border-radius: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgb(151, 146, 146);
+    padding:3px 10px;
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.submit-btn{
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 155, 32);
+    text-decoration: none;
+    text-align: center;
+}
+
+.search-field{
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(223, 248, 253);
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    margin: 15px 20px;
+    
+}
+
+.search-btn{
+    width: 9rem;
+    height: 2.5rem;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 155, 32);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width:768px){
+    
+    .navbar-click{
+        display: block;
+        float: left;
+        padding-left: 10px;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .navbar-click.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .navbar-click.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .navbar-click.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .links{
+        position: fixed;
+        left: -100%;
+        top:40px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #343a40;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-link{
+        margin: 16px 0px;
+    }
+
+    .links.active{
+        left: 0;
+
+    }
+    #graph{
+        width: 90%;
+    }
+}
+
+
+h3{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.background{
+    background-image: url("../assets/backgroundimg.jpg");
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(75%);
+}
+
+
+#graph{
+    width: 85%;
+}
+
+#graph-cont {
+    display: flex;
+    padding: 0px;
+}
+
+.graph-pane{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.graph-pane .submit-btn{
+    width: 7rem;
+    background-color: chocolate;
+    border-radius: 2px;
+}
+
+.comparison-graph{
+    width: 90%;
+}
+
+#graph-comparison-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compare-field-cont{
+    display: flex;
+    flex-direction: column;
+}
+.compare-field{
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(223, 248, 253);
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    margin: 15px 20px;
+}
+
+.compare-btn{
+    width: 7rem;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 155, 32);
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
