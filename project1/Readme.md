@@ -132,4 +132,4 @@ are excited to use it for your stock related queries.
 
 ## Designed by
 
-<span style="font-size:1.5em;">_Aditya Jha & Jakharia Rishit_</span>
+## _Aditya Jha & Jakharia Rishit_
