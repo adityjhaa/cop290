@@ -1,11 +1,10 @@
-## Trading Simulator & Analyzer
+# Trading Simulator & Analyzer
 
-
-**1\. Introduction:**
+## 1\. Introduction
 
 The primary goal is to provide users with a user-friendly interface to view stock data, compare multiple stocks on the same graph, and apply various filters for better analysis.
 
-**2\. Technologies Used:**
+## 2\. Technologies Used
 
 -   Flask: Chosen for its simplicity and flexibility, Flask allows us to build a web application quickly and efficiently.
 
@@ -21,9 +20,9 @@ The primary goal is to provide users with a user-friendly interface to view stoc
 
 -   HTML, CSS: For the basic structure and design elements for the web application.
 
-**3\. Key Features:**
+## 3\. Key Features
 
-3.1 Stock Display:
+### 3.1 Stock Display:
 
 -   The backend fetches stock data from Jugaad Data and presents it.
 
@@ -31,13 +30,13 @@ The primary goal is to provide users with a user-friendly interface to view stoc
 
 -   Users can choose specific time intervals (daily, weekly, monthly) for stock data visualization and the beginning and end dates.
 
-3.2 Multiple Stock Comparison:
+### 3.2 Multiple Stock Comparison:
 
 -   The website allows users to compare stocks on the same graph for a comprehensive analysis.
 
 -   Users can input stock symbols or select from a predefined list to visualize the performance of multiple stocks simultaneously.
 
-3.3 Filtering Options:
+### 3.3 Filtering Options:
 
 To enhance analysis, the backend supports various filters:
 
@@ -47,13 +46,13 @@ To enhance analysis, the backend supports various filters:
 
 -   RSI: Users can apply Relative Strength Index(RSI) filters to identify overbought or oversold conditions.
 
-3.4 User Authentication and Authorization:
+### 3.4 User Authentication and Authorization:
 
 -   The backend implements user authentication and authorization mechanisms to ensure data privacy and security.
 
 -   Authenticated users have access to personalized features, and administrators have additional privileges.
 
-**4\. Architecture:**
+## 4\. Architecture
 
 The backend follows a modular and scalable architecture:
 
@@ -67,7 +66,7 @@ The backend follows a modular and scalable architecture:
 
 -   API Integration: Utilizes YFinance API for fetching real-time stock data.
 
-**5\. Website Layout**
+## 5\. Website Layout
 
 The first-time user is directed to the registration page.
 
@@ -131,6 +130,6 @@ for any information he/she may want to gain.
 We had a complete walkthrough of this amazing web application. Hope you
 are excited to use it for your stock related queries.
 
-Designed by
+## Designed by
 
-Aditya Jha & Jakharia Rishit
+<span style="font-size:1.5em;">_Aditya Jha & Jakharia Rishit_</span>
