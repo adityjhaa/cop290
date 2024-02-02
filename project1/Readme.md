@@ -130,6 +130,5 @@ for any information he/she may want to gain.
 We had a complete walkthrough of this amazing web application. Hope you
 are excited to use it for your stock related queries.
 
-## Designed by
-
+## Designed by-
 ## _Aditya Jha & Jakharia Rishit_
