@@ -93,24 +93,23 @@ The backend follows a modular and scalable architecture:
 
 The first-time user is directed to the registration page.
 
-![](.//media/image3.png){width="6.204861111111111in"
-height="3.2916666666666665in"}
+![](.//media/image3.png)
 
 Here, an account can be created by the user and he/she will be sent to
 the home page. If the user already has an account, he/she can login
 directly by going to the login page.
 
-![](.//media/image5.png){width="6.25in" height="3.2534722222222223in"}
+![](.//media/image5.png)
 
 After log in or after creating an account, the user is greeted with the
 home page.
 
-![](.//media/image7.png){width="6.267716535433071in"
-height="3.3055555555555554in"}
+![](.//media/image7.png)
+
 
 Here, the user can search a stock by its symbol, the start date and end
 date (if the date bounds are not given, the program uses 10 years before
-the present day and the present day as the default bounds.
+the present day and the present day as the default bounds).
 
 The program loads the stocks as a candle-stick chart. The user has some
 useful options here:
@@ -127,13 +126,11 @@ useful options here:
 -   Adjustment of range with the help of the range-slider facilitates
     > the experience even more.
 
-![](.//media/image1.png){width="6.267716535433071in"
-height="3.3333333333333335in"}
+![](.//media/image1.png)
 
 An example of filters is shown below.
 
-![](.//media/image6.png){width="6.267716535433071in"
-height="3.3333333333333335in"}
+![](.//media/image6.png)
 
 These features make it extremely user-friendly and informative for the
 user. Now, we shall see the next big thing - Comparison.
@@ -148,8 +145,7 @@ Once the user has all his information, he may want to logout (for
 privacy reasons). The logout button comes into picture here and makes
 logging out one click away from the user.
 
-![](.//media/image2.png){width="6.267716535433071in"
-height="3.2916666666666665in"}
+![](.//media/image2.png)\
 
 This takes him/her back to the login page where he/she can easily login
 for any information he/she may want to gain.
