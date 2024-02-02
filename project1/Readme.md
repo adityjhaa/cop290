@@ -1,95 +1,73 @@
-**COP290**
+## Trading Simulator & Analyzer
 
-**Trading Simulator & Analyzer**
 
-[Subtask - 2]{.underline}
+**1\. Introduction:**
 
-1\. Introduction:
+The primary goal is to provide users with a user-friendly interface to view stock data, compare multiple stocks on the same graph, and apply various filters for better analysis.
 
-> The primary goal is to provide users with a user-friendly interface to
-> view stock data, compare multiple stocks on the same graph, and apply
-> various filters for better analysis.
+**2\. Technologies Used:**
 
-2\. Technologies Used:
+-   Flask: Chosen for its simplicity and flexibility, Flask allows us to build a web application quickly and efficiently.
 
--   Flask: Chosen for its simplicity and flexibility, Flask allows us to
-    > build a web application quickly and efficiently.
+-   Pandas: Utilized for data manipulation and analysis, especially for handling stock data.
 
--   Pandas: Utilized for data manipulation and analysis, especially for
-    > handling stock data.
-
--   Plotly: Employed for creating interactive and visually appealing
-    > graphs to display stock information.
+-   Plotly: Employed for creating interactive and visually appealing graphs to display stock information.
 
 -   Flask\_login: Used for management of user login and logout states.
 
--   WerkZeug: This module is commonly used in web applications,
-    > especially with Flask, to manage user passwords securely.
+-   WerkZeug: This module is commonly used in web applications, especially with Flask, to manage user passwords securely.
 
 -   Jugaad data: For fetching the stock data.
 
--   HTML, CSS: For the basic structure and design elements for the web
-    > application.
+-   HTML, CSS: For the basic structure and design elements for the web application.
 
-3\. Key Features:
+**3\. Key Features:**
 
 3.1 Stock Display:
 
 -   The backend fetches stock data from Jugaad Data and presents it.
 
--   Historical data is displayed, including opening, closing, and high
-    > and low prices.
+-   Historical data is displayed, including opening, closing, and high and low prices.
 
--   Users can choose specific time intervals (daily, weekly, monthly)
-    > for stock data visualization and the beginning and end dates.
+-   Users can choose specific time intervals (daily, weekly, monthly) for stock data visualization and the beginning and end dates.
 
 3.2 Multiple Stock Comparison:
 
--   The website allows users to compare stocks on the same graph for a
-    > comprehensive analysis.
+-   The website allows users to compare stocks on the same graph for a comprehensive analysis.
 
--   Users can input stock symbols or select from a predefined list to
-    > visualize the performance of multiple stocks simultaneously.
+-   Users can input stock symbols or select from a predefined list to visualize the performance of multiple stocks simultaneously.
 
 3.3 Filtering Options:
 
 -   To enhance analysis, the backend supports various filters:
 
-    -   MACD: Moving Average Convergence Divergence is also implemented
-        > for the user to check the validity of the stock.
+    -   MACD: Moving Average Convergence Divergence is also implemented for the user to check the validity of the stock.
 
-    -   SMA: Incorporating Simple Moving Averages (SMA) with
-        > customizable window sizes (we used SBA-50 and SBA-100).
+    -   SMA: Incorporating Simple Moving Averages (SMA) with customizable window sizes (we used SBA-50 and SBA-100).
 
-    -   RSI: Users can apply Relative Strength Index(RSI) filters to
-        > identify overbought or oversold conditions.
+    -   RSI: Users can apply Relative Strength Index(RSI) filters to identify overbought or oversold conditions.
 
 3.4 User Authentication and Authorization:
 
--   The backend implements user authentication and authorization
-    > mechanisms to ensure data privacy and security.
+-   The backend implements user authentication and authorization mechanisms to ensure data privacy and security.
 
--   Authenticated users have access to personalized features, and
-    > administrators have additional privileges.
+-   Authenticated users have access to personalized features, and administrators have additional privileges.
 
-4\. Architecture:
+**4\. Architecture:**
 
 The backend follows a modular and scalable architecture:
 
 -   Routes: Defined for handling different URLs and HTTP methods.
 
--   Controllers: Responsible for handling business logic, such as
-    > fetching stock data, applying filters, and preparing data for
-    > visualization.
+-   Controllers: Responsible for handling business logic, such as fetching stock data, applying filters, and preparing data for visualization.
 
 -   Models: Represent the data structures used in the application.
 
 -   Templates: Developed using Jinja2 to create dynamic HTML pages.
 
--   API Integration: Utilizes YFinance API for fetching real-time stock
-    > data.
+-   API Integration: Utilizes YFinance API for fetching real-time stock data.
 
-5\. Website Layout
+**5\. Website Layout**
 
 The first-time user is directed to the registration page.
 
@@ -114,17 +92,13 @@ the present day and the present day as the default bounds).
 The program loads the stocks as a candle-stick chart. The user has some
 useful options here:
 
--   He/she can choose whether to view the daily, weekly or monthly stock
-    > price changes.
+-   He/she can choose whether to view the daily, weekly or monthly stock price changes.
 
--   He/she can choose to view in some pre-defined time ranges (e.g. 1
-    > month, 6 month, 1 year, etc.).
+-   He/she can choose to view in some pre-defined time ranges (e.g. 1 month, 6 month, 1 year, etc.).
 
--   He/she can choose between a number of technical filters for enhanced
-    > analysis (e.g. MACD, RSI, SMA).
+-   He/she can choose between a number of technical filters for enhanced analysis (e.g. MACD, RSI, SMA).
 
--   Adjustment of range with the help of the range-slider facilitates
-    > the experience even more.
+-   Adjustment of range with the help of the range-slider facilitates the experience even more.
 
 ![](.//media/image1.png)
 
