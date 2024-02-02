@@ -39,13 +39,13 @@ The primary goal is to provide users with a user-friendly interface to view stoc
 
 3.3 Filtering Options:
 
--   To enhance analysis, the backend supports various filters:
+To enhance analysis, the backend supports various filters:
 
-    -   MACD: Moving Average Convergence Divergence is also implemented for the user to check the validity of the stock.
+-   MACD: Moving Average Convergence Divergence is also implemented for the user to check the validity of the stock.
 
-    -   SMA: Incorporating Simple Moving Averages (SMA) with customizable window sizes (we used SBA-50 and SBA-100).
+-   SMA: Incorporating Simple Moving Averages (SMA) with customizable window sizes (we used SBA-50 and SBA-100).
 
-    -   RSI: Users can apply Relative Strength Index(RSI) filters to identify overbought or oversold conditions.
+-   RSI: Users can apply Relative Strength Index(RSI) filters to identify overbought or oversold conditions.
 
 3.4 User Authentication and Authorization:
 
@@ -72,19 +72,19 @@ The backend follows a modular and scalable architecture:
 The first-time user is directed to the registration page.
 
 ![](.//media/image3.png)
-
+<br><br>
 Here, an account can be created by the user and he/she will be sent to
 the home page. If the user already has an account, he/she can login
 directly by going to the login page.
 
 ![](.//media/image5.png)
-
+<br><br>
 After log in or after creating an account, the user is greeted with the
 home page.
 
 ![](.//media/image7.png)
 
-
+<br><br>
 Here, the user can search a stock by its symbol, the start date and end
 date (if the date bounds are not given, the program uses 10 years before
 the present day and the present day as the default bounds).
@@ -101,15 +101,18 @@ useful options here:
 -   Adjustment of range with the help of the range-slider facilitates the experience even more.
 
 ![](.//media/image1.png)
+<br><br>
 
 An example of filters is shown below.
 
 ![](.//media/image6.png)
+<br><br>
 
 These features make it extremely user-friendly and informative for the
 user. Now, we shall see the next big thing - Comparison.
 
-![](.//media/image4.png){width="6.267716535433071in" height="3.375in"}
+![](.//media/image4.png)
+<br><br>
 
 On this page, the user can add multiple stocks to view them
 simultaneously. This gives a better comparison sense between the
@@ -119,7 +122,8 @@ Once the user has all his information, he may want to logout (for
 privacy reasons). The logout button comes into picture here and makes
 logging out one click away from the user.
 
-![](.//media/image2.png)\
+![](.//media/image2.png)
+<br><br>
 
 This takes him/her back to the login page where he/she can easily login
 for any information he/she may want to gain.
