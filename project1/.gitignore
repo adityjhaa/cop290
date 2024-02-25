@@ -1,2 +1,7 @@
 subtask2/instance/
 subtask2/website/__pycache__/
+subtask2/website/data/DATA.pkl
+*.out
+*.ipynb
+*.csv
+*.txt
