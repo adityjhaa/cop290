@@ -1,8 +1,9 @@
+import os
 import moviepy.editor as mp
 import speech_recognition as sr
 import PyPDF2
 import sys
-import os
+import ffmpeg
 
 def extract_text_from_video(video_file):
     video = mp.VideoFileClip(video_file)
@@ -32,19 +33,40 @@ def extract_text_from_pdf(pdf_file):
             text += page.extract_text() + '\n'
     return text
 
-# file = ''
-file = 'test1.wav'
-# file = 'instr.pdf'
 
-# text = extract_text_from_video(file)
-text = extract_text_from_audio(file)
-# text = extract_text_from_pdf(file)
+def main():
+    print("Enter choice for file type : \n1. Video\n2. Audio\n3. Pdf\n?- ", sep='')
+    n = int(input())
+    if n<1 or n>3:
+        sys.exit("Choice should be in range 1-3")
 
-filepath , filename = os.path.split(file)
-basename, ext = os.path.splitext(filename)
+    print("Enter file path : ", end='')
+    file = input()
+    text = ''
+    match n:
+        case 1:
+            text = extract_text_from_video(file)
+        case 2:
+            filepath , filename = os.path.split(file)
+            basename, ext = os.path.splitext(filename)
+            wav_file = f"{basename}.wav"
+            stream = ffmpeg.input(file)
+            stream = ffmpeg.output(stream, wav_file, acodec='pcm_s16le', ac=1, ar='16k')
+            ffmpeg.run(stream)
+            file = wav_file
+            text = extract_text_from_audio(file)
+        case 3:
+            text = extract_text_from_pdf(file)
+        case _:
+            sys.exit("ERROR")
 
-output = f"{basename}.txt"
+    filepath , filename = os.path.split(file)
+    basename, ext = os.path.splitext(filename)
 
-with open(output, 'w') as file:
-    file.write(text)
-    
+    output = f"{basename}.txt"
+
+    with open(output, 'w') as file:
+        file.write(text)
+        
+if __name__ == "__main__":
+    main()
