@@ -1,3 +1,4 @@
 speech_recognition
 PyPDF2
 moviepy
+ffmpeg
